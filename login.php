@@ -68,7 +68,7 @@ padding: 10px;
 </style>
 <div class="center"> 
 
-  <h2>Login</h2>
+  <h2>Logisdsdsdn</h2>
 
   <?php if(isset($error)) echo "<p>$error</p>"; ?>
   <form method="POST">
