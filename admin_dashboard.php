@@ -14,7 +14,7 @@ function logout(){
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Admin Dashboard</title>
+  <title>Admin Dashboard SDNAIUDBIAUBUIA</title>
 </head>
 <body>
   <h2>Welcome <?php echo $_SESSION['user_type'] ?></h2>
