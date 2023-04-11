@@ -183,6 +183,102 @@ function logout(){
      
 </form>
 
+    <header class=" bg-slate-100">
+        <div class="container inline-flex justify-between items-center mx-auto px-5">
+            <nav class="">
+                <ul class="flex">
+                    <img src="img/randomLogo.png" width="40" height="40" alt="" class="mx-auto py-3 mx-0 text-base leading-7 me-4">
+                    <li class="flex-auto p-2"><a href="" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Dashboard</a></li>
+                    <li class="flex-auto p-2"><a href="" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Form</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center pe-5">
+                <div class="block p-2">
+                    <strong class="block">Andrew Alfred</strong>
+                    <span class="block hover:text-green-700">Technical advisor</span>
+                </div>
+                <img src="img/randomLogo.png" width="40" height="40" class="">
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end ms-3">
+                  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log out <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="block">
+      <div class="container justify-end items-center flex mt-5">
+        <th colspan="6" class="px-5">
+          <label class="relative block flex">
+            <button class="rounded bg-blue-400 px-2 py-1 mx-1 text-slate-100 font-semibold">Import</button>
+            <span class="sr-only">Search</span>
+            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+              <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20">...</svg>
+            </span>
+            <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+          </label>
+        </th>
+      </div>
+      <div class="container text-sm px-3 table-responsive overflow-x-auto flex justify-center mt-5">
+              <table class="border-collapse table table-auto border rounded-t-lg divide-y w-full sm:w-auto md:w-1/2 lg:w-1/3">
+                <!-- <caption class="caption-top">
+                  Table 3.1: Professional wrestlers and their signature moves.
+                </caption> -->
+                <thead>
+                  <tr>
+                    <th colspan="15" class="text-left">
+                        <h3 class="text-base font-semibold leading-6 text-gray-900 ms-5 mt-1">Applicant Information</h3>
+                        <p class="ms-5 mt-1 mb-1 max-w-2xl text-sm text-gray-500">Personal details and application.</p>
+                    </th>
+                  </tr>
+                  <tr class="text-sm font-medium text-gray-900 font-sans">
+                    <th rowspan="2" class="border p-2 rounded-tl-lg">LTC Number</th>
+                    <th rowspan="2" class="border p-2">DAR Admin Order</th>
+                    <th rowspan="2" class="border p-2">Status of DAR Clearance</th>
+                    <th rowspan="2" class="border p-2">Date Approved</th>
+                    <th colspan="2" class="border p-2">Location of the Property</th>
+                    <th colspan="4" class="border p-2">Name of Transferor</th>
+                    <th rowspan="2" class="border p-2">Type of Seller</th>
+                    <th rowspan="2" class="border p-2">Type of Deed</th>
+                    <th rowspan="2" class="border p-2">Date Notarized</th>
+                    <th rowspan="2" class="border p-2">Notary Public</th>
+                    <th colspan="3" class="border p-2">Land Data Information</th>
+                    <th colspan="4" class="border p-2 rounded-tr-lg">Name of Transferee</th>
+                  </tr>
+                  <tr>
+                    <th class="border p-2">Municipality</th>
+                    <th class="border p-2">Barangay</th>
+                    <th class="border p-2">Last Name</th>
+                    <th class="border p-2">First Name</th>
+                    <th class="border p-2">Middle Name</th>
+                    <th class="border p-2">Address</th>
+                    <th class="border p-2">Tile Number</th>
+                    <th class="border p-2">TAXDEC Number</th>
+                    <th class="border p-2">Area (HAS.)</th>
+                    <th class="border p-2">Last Name</th>
+                    <th class="border p-2">First Name</th>
+                    <th class="border p-2">Middle Name</th>
+                    <th class="border p-2">Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border p-1">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                    <td class="border p-1">Malcolm Lockyer</td>
+                    <td class="border p-1">1961</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-1">Witchy Woman</td>
+                    <td class="border p-1">The Eagles</td>
+                    <td class="border p-1">1972</td>
+                  </tr>
+                  <tr>
+                    <td class="border p-1">Shining Star</td>
+                    <td class="border p-1">Earth, Wind, and Fire</td>
+                    <td class="border p-1">1975</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </main>
 
 
 
