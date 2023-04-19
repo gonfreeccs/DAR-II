@@ -60,10 +60,24 @@
 <body class="bg-success background-container fonts">
     <!-- Header content -->
     <header class="d-flex justify-content-between col-12 navbar-light justify-content-between py-2 px-5 bg-light mb-2 col-auto">
-        <div class="d-inline-flex col-sm-auto">
-            <a href="" class="navbar-brand active"><h3 class="fw-bolder text-uppercase">Dashboard</h3></a>
-            <a href="" class="nav-link text-dark"><h4 class="fw-bold text text-success-uppercase text-secondary">Form</h4></a>
+        <div class="col-sm-auto d-flex justify-content-start align-items-center">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active bg-success text-uppercase" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Form</a>
+                </li>
+            </ul>
         </div>
+        <!-- <div class="d-inline-flex justify-content-start col-sm-auto card">
+            <div class="nav-item">
+                <a href="" class="navbar-brand active btn-success px-3 m-0"><p class="fw-normal text-white text-uppercase">Dashboard</p></a>
+            </div>
+            <div class="nav-item">
+                <a href="" class="nav-link text-dark btn-secondary m-0"><p class="fw-bold text-uppercase">Form</p></a>
+            </div>
+        </div> -->
         <div class="col-sm-auto">
             <div class="float-start mx-2">
                 <h6><strong>Josephine B. Roxas</strong></h6>
@@ -86,7 +100,7 @@
     </header>
 
     <!-- Main content -->
-    <div class="container bg-light py-5 px-5 background-container-v2">
+    <div class="mx-5 bg-light py-5 px-5 background-container-v2">
         <h2 class="fw-bolder text-uppercase">DAR Clearance Form</h2>
         <div class="mb-3 px-1">
             <p class="text-danger my-3 fs-6 fst-italic">Note: Fields with * (asterisk) are required fields</p>
