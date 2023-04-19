@@ -413,8 +413,18 @@
                         </div>
                     </div>
                 </div>
-            <div class="d-flex justify-content-start">
-                <input type="submit" class="btn-success border-0 px-5 py-2 m-1 rounded text-white text-uppercase" value="Register">
+            <div class="d-flex justify-content-between px-2 row">
+                <div class="mb-3 col-lg-4 px-1">
+                    <label for="scnClearance" class="form-label">Upload the scanned clearance here <strong class="text-danger">*</strong></label>
+                    <input type="file" class="form-control" id="scnClearance" aria-describedby="userHelp" required>
+                    <div class="invalid-feedback text-lowercase">
+                        Please fill up the blank input fields.
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-4 px-1"></div>
+                <div class="m-3 col-lg-3 px-1">
+                    <input type="submit" class="btn-success border-0 px-5 py-2 m-1 rounded text-white text-uppercase" value="Register">
+                </div>
             </div>
         </form>
     </div>
