@@ -54,44 +54,89 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <title>Department of Agrarian Reform, Camarines Sur II</title>
-</head>
-<body class="bg-slate-900 bg-no-repeat bg-center bg-cover bg-fixed">
-    <div class="container mx-auto p-4 flex justify-center h-screen w-full items-center max-w-md">
-      <?php if(isset($error)) echo "<p>$error</p>"; ?>
-        <form action="" method="POST" class="border-solid border-0  min-w-[100%]">
-            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
-            <fieldset  class="border-solid border-2 bg-slate-50 p-5 rounded-md">
-                <legend class="mx-auto"><img src="img/randomLogo.png" width="100vw" height="100vh" alt="" class="mx-auto"></legend>
-                <p class="mb-4 text-2xl font-bold space text-center">Sign in to your account</p><hr/>
-                <label class="block mt-5">
-                    <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-                      Username
-                    </span>
-                    <input type="text" name="text" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
-                </label>
-                <label class="block">
-                    <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-                      Password
-                    </span>
-                    <input type="password" name="password" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="password" />
-                    <button type="submit" class="group relative flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 my-3 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-                          <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
-                          </svg>
-                        </span>
-                        Sign in
-                    </button>
-                </label><hr/>
-                <a href="" class="text-sm font-medium mt-3 text-center flex justify-center hover:text-sky-400/100">Forgot password</a>
-            </fieldset>
-        </form>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap 5 link/script -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <!-- Fontawesome script -->
+      <script src="https://kit.fontawesome.com/4beab97406.js" crossorigin="anonymous"></script>
+      <title>Document</title>
+      <style>
+        .background-container {
+          min-height:100%;
+          background:linear-gradient(0deg, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)), url(img/cover.jpg);
+          background-size:cover;
+          position: relative;
+          background-size: cover; 
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+
+        .background-container-v2 {
+          min-height:100%;
+          background:linear-gradient(0deg, rgba(255, 255, 255, 0.950), rgba(255, 255, 255, 0.950)), url(img/logo.png);
+          /* background-size:cover; */
+          /* position: relative; */
+          /* background-size: cover;  */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+
+        .overlay {
+          position: absolute; 
+          top: 0; 
+          left: 0; 
+          width: 100%; 
+          height: 100%; 
+          background-color: rgba(0, 0, 0, 0.5); 
+        }
+      </style>
+  </head>
+  <body class="bg-success background-container">
+    <div class="container content mx-auto p-0 d-flex justify-content-center align-items-center min-vh-100 col-12 col-lg-4 bg-white flex-column background-container-v2">
+      <div class="text-left lh-1 d-flex justify-content-center align-items-center">
+        <img src="img/DAR Header.png" alt="" width="auto" height="90" class="mb-5">
+      </div>
+      <form action="" method="POST" class="col-lg-9 needs-validation" novalidate>
+        <p class="fw-bolder fs-4 text-center">Sign in to your account</p><hr/>
+        <p class="text-danger my-3 fs-6 fst-italic">Note: Fields with * (asterisk) are required fields</p>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username <strong class="text-danger">*</strong></label>
+          <input type="text" class="form-control" id="username" aria-describedby="userHelp" required>
+          <div class="invalid-feedback">
+            Please fill up the blank input fields.
+          </div>
+        </div>  
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password <strong class="text-danger">*</strong></label>
+          <input type="password" class="form-control" id="password" aria-describedby="userHelp" required>
+          <div class="invalid-feedback">
+            Please fill up the blank input fields.
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary form-control bg-success border-0 fw-bold"><i class="fa-sharp fa-solid fa-right-to-bracket"></i> Login</button><hr>
+        <a href="#" class="d-flex justify-content-center">Forgot your password?</a>
+      </form>
     </div>
-</body>
+
+    <script>
+      var forms = document.querySelectorAll(".needs-validation");
+
+      Array.prototype.slice.call(forms).forEach(function(form){
+        form.addEventListener("submit", function(event){
+          if (!form.checkValidity()){
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add("was-validated");
+        }, false);
+      });
+    </script>
+  </body>
 </html>
