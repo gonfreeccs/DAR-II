@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-container {
+    min-height:100%;
+    max-height: 100%;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)), url(img/cover.jpg);
+    background-size:cover;
+    position: relative;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.background-container-v2 {
+    min-height:100%;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.950), rgba(255, 255, 255, 0.950)), url(img/logo.png);
+    background-size:cover;
+    /* position: relative; */
+    /* background-size: cover;  */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.bg-container-v3 {
+    min-height: 100%;
+    background: url(img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.latoFonts {
+    font-family: 'Lato', sans-serif;
+}
+
+.fonts {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.hoverBig:hover {
+    width: auto;
+    height: 90vh;
+    transition: 2s;
+}
+
+.hoverButton {
+    background: transparent;
+    text-decoration: none;
+    color: black;
+}
+
+.login {
+    background: rgba(211, 211, 211, 0.401);
+}
+
+.hoverButton:hover, .login:hover {
+    background: #20c997;
+    /* font-weight: bold; */
+    transition: .3s;
+    color: black;
+}
+
+.lh-1 {
+    line-height: 1;
+}
+
+.lh-0 {
+    line-height: 0;
+}
+
+.indent-3p {
+    text-indent: 3%;
+}
+
+.container-mod {
+    position: relative;
+    display: inline-block;
+}
+
+.org-container {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.image-zoom {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    /* background: white; */
+}
+
+/* .image-zoom:hover {
+    max-width: 100%;
+    transition: ease-in .5s;
+} */
+
+.zoom-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-size: 510%;
+    background-repeat: no-repeat;
+    visibility: hidden;
+    z-index: 1;
+    /* background: white; */
+}
+
+.get-started {
+    /* padding: 2vh 2vw; */
+    border: 0;
+    border-radius: 20px;
+    background: #198754;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 0;
+    text-decoration: none;
+    box-shadow: black .2rem .2rem .3rem;
+}
+
+.get-started:hover {
+    background: #42ac7b;
+    /* border: solid red; */
+    color: white;
+    transition: .5s;
+    box-shadow: black .3rem .3rem .4rem;
+}
+
+.land-page {
+    height: 90vh;
+}
+
+.mvcv {
+    height: 50vh;
+    padding: 15vh 15vh;
+}
